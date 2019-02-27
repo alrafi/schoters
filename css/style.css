@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 
 header {
     font-family: 'Open Sans', sans-serif;
@@ -7,6 +7,10 @@ header {
 body {
     font-family: Helvetica, sans-serif;
     background-color: #fff;
+    /* font-size: 1px; */
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
@@ -15,6 +19,91 @@ body {
     overflow: hidden;
 }
 
+header .container {
+    width: 100%;
+    /* margin: auto;
+    overflow: hidden; */
+}
+
 header {
     background: #38C4CA;
+    height: 80px;
+    color: #fff;
+}
+
+header #menu-icon, header #branding, header #search-box {
+    float: left;
+}
+
+header #menu-icon {
+    margin-top: 15px;
+    margin-left: 48px;
+}
+
+header #branding {
+    margin-left: 26px;
+}
+
+header #search-box {
+    margin-left: 38px;
+}
+
+header #search-box input[type="text"] {
+    padding: 10px;
+    font-size: 20pt;
+    width: 600px;
+    color: #9b9b9b;
+    margin-top: 15px;
+    /* border: 2px solid #9b9b9b; */
+    border: none;
+    border-radius: 3px;
+    
+}
+
+header #branding h1 {
+    font-size: 32pt;
+    margin-top: 5px;
+}
+
+header nav {
+    float: right;
+    margin-right: 65px;
+    margin-top: 20px;
+}
+
+
+header ul {
+    margin: 0;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 10px;
+    font-size: 20pt;
+}
+
+header li .round {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 26px;
+}
+
+header li .fa-user {
+    padding-top: 3px;
+    padding-left: 7.5px;
+    color: #000;
+    font-size: 26px;
+}
+
+header li .fa-bell {
+    font-size: 26px;
+    margin-top: 5px;
+    color: #000;
+}
+header .search-box {
+    margin-top: 30px;
+    margin-left: 30px;
 }

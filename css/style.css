@@ -11,18 +11,22 @@ body {
     line-height: 1.5;
     padding: 0;
     margin: 0;
+    /* transform: scale(0.8); */
+    /* transform-origin: 0 0; */
 }
 
 .container {
+    /* width: 65%; */
+    /* margin: auto; */
+    margin-left: 264px;
     width: 50%;
-    margin: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 header .container {
     width: 100%;
-    /* margin: auto;
-    overflow: hidden; */
+    margin: auto;
+    overflow: hidden;
 }
 
 header {
@@ -36,11 +40,16 @@ header #menu-icon, header #branding, header #search-box {
 }
 
 header #menu-icon {
-    margin-top: 15px;
+    margin-top: 25px;
     margin-left: 48px;
 }
 
+header #menu-icon .fa-bars {
+    font-size: 26px;
+}
+
 header #branding {
+    /* margin-top: 20x; */
     margin-left: 26px;
 }
 
@@ -50,10 +59,11 @@ header #search-box {
 
 header #search-box input[type="text"] {
     padding: 10px;
-    font-size: 20pt;
-    width: 600px;
+    font-size: regular 20pt;
+    width: 700px;
+    /* max-width: 800px; */
     color: #9b9b9b;
-    margin-top: 15px;
+    margin-top: 25px;
     /* border: 2px solid #9b9b9b; */
     border: none;
     border-radius: 3px;
@@ -61,26 +71,33 @@ header #search-box input[type="text"] {
 }
 
 header #branding h1 {
-    font-size: 32pt;
-    margin-top: 5px;
+    font-size: regular 32pt;
+    margin-top: 15px;
 }
 
 header nav {
     float: right;
     margin-right: 65px;
-    margin-top: 20px;
+    margin-top: 25px;
 }
-
 
 header ul {
     margin: 0;
 }
 
+header a, section a {
+    text-decoration: none;
+}
+
 header li {
     float: left;
     display: inline;
-    padding: 0 10px;
-    font-size: 20pt;
+    padding: 0 0;
+    font-size: regular 20pt;
+}
+
+header nav .login {
+    margin-top: 5px;
 }
 
 header li .round {
@@ -92,8 +109,8 @@ header li .round {
 }
 
 header li .fa-user {
-    padding-top: 3px;
-    padding-left: 7.5px;
+    padding-top: 5px;
+    padding-left: 8.5px;
     color: #000;
     font-size: 26px;
 }
@@ -106,4 +123,41 @@ header li .fa-bell {
 header .search-box {
     margin-top: 30px;
     margin-left: 30px;
+}
+
+/* breadcrumb */
+section #breadcrumb ul {
+    margin-top:18px;
+    margin-bottom: 24px;
+}
+section li {
+    display: inline;
+    padding: 10px;
+    font-size: regular 20pt;
+    color: #b2b0b0;
+}
+
+section#breadcrumb .right {
+    color: #b2b0b0;
+}
+
+/* main */
+
+section#main h2{
+    font-size: bold 36pt;
+}
+
+section#main p {
+    font-size: regular 24pt;
+}
+
+section#main .button {
+    width: 330px;
+    height: 64px;
+    background: #5f9be1;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16pt;
+    font-weight: bold;
 }

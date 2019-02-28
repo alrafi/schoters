@@ -11,10 +11,10 @@
     <header>
         <div class="container">
             <div id="menu-icon">
-                <i class="fas fa-bars"></i>
+                <a href="#"><i class="fas fa-bars"></i></a>
             </div>
             <div id="branding">
-                    <h1>Schoters</h1>
+                <a href="#"><h1>Schoters</h1></a>       
             </div>
             <div id="search-box">
                 <form action="">

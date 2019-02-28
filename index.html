@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
 </head>
 <body>
     <header>
@@ -55,37 +56,6 @@
         </div>
     </section>
 
-    <script>
-        window.addEventListener('load', getData);
-
-        function getData() {
-            xhr = new XMLHttpRequest();
-            
-            xhr.open('GET', 'https://private-90552-schoterspersonal.apiary-mock.com/categories', true);
-            
-            xhr.onload = function() {
-                if (this.status == 200) {
-                    var category = JSON.parse(this.responseText);
-
-                    var output = '';
-
-                    for (var i in category) {
-                        output +=
-
-                            '<input type="checkbox" id="'+category[i].id+'" name="'+category[i].name+'">'+
-                            '<label for="'+category[i].id+'" class="btn">'+
-                            category[i].name +
-                            '</label>'
-                            
-
-                        document.getElementById('category').innerHTML = output;
-                    }
-                }
-            }
-
-            xhr.send();
-            
-        }
-    </script>
+    <script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>

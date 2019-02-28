@@ -47,9 +47,40 @@
     <section id="main">
         <div class="container">
             <h2>Personalize your Schoters Homepage</h2>
+            <div id="category"></div>
             <p>Pick 5 top scholarship categories that you are interested to help us deliver the most relevant information with your preferences</p>
             <button class="button">Done</button>
         </div>
     </section>
+
+    <script>
+        window.addEventListener('load', getData);
+
+        function getData() {
+            xhr = new XMLHttpRequest();
+            
+            xhr.open('GET', 'https://private-90552-schoterspersonal.apiary-mock.com/categories', true);
+            
+            xhr.onload = function() {
+                if (this.status == 200) {
+                    var category = JSON.parse(this.responseText);
+
+                    var output = '';
+
+                    for (var i in category) {
+                        output +=
+                            '<ul>' +
+                            '<li> '+category[i].name+' </li>' +
+                            '</ul';
+
+                        document.getElementById('category').innerHTML = output;
+                    }
+                }
+            }
+
+            xhr.send();
+            
+        }
+    </script>
 </body>
 </html>

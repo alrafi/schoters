@@ -54,6 +54,9 @@
                 <input type="submit" class="button" value="Done">
             </form>  
         </div>
+        <div class="chat">
+            <a href="#"><i class="fas fa-comment"></i></a>
+        </div>
     </section>
 
     <script src="js/main.js" type="text/javascript"></script>

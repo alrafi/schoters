@@ -221,3 +221,25 @@ section#main .list-category ul {
     padding-top: 10px;
     padding-left: 20px;
 }
+
+section#main .chat {
+    /* top: 800px; */
+    /* float: right; */
+    /* position: fixed; */
+    width: 60px;
+    height: 60px;
+    background: #178fdd;
+    border: solid 1px #0b5789;
+    float: right;
+    margin-top: 200px;
+    margin-right: 65px;
+    margin-bottom: 40px;
+    border-radius: 50%;
+}
+
+section#main .fa-comment {
+    color: #fff;
+    padding-left: 13px;
+    padding-top: 13px;
+    font-size: 35px;
+}

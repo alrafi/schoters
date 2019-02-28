@@ -146,10 +146,12 @@ section#breadcrumb .right {
 
 section#main h2{
     font-size: bold 36pt;
+    margin-bottom: 34px;
 }
 
 section#main p {
     font-size: regular 24pt;
+    margin-bottom: 28px;
 }
 
 section#main .button {
@@ -162,3 +164,44 @@ section#main .button {
     font-size: 16pt;
     font-weight: bold;
 }
+
+section#main label {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    margin-left: 0;
+    position: relative;
+    background: #fbfbfb;
+    color: #545454;
+    font-size: regular 20pt;
+    border: solid 1px #545454;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+section#main label:hover {
+    background: #38C4CA;
+    color: #fbfbfb;
+}
+
+section#main input[type=checkbox]:checked + label {
+    background: #38C4CA;
+    color: #fbfbfb;
+    /* font-size: 30px; */
+}
+
+section#main input[type=checkbox] {
+    display: none;
+}
+
+section#main #category {
+    margin-bottom: 30px;
+}
+
+section#main input[type="submit"]:hover {
+    background: #545454;
+    cursor: pointer;
+}
+

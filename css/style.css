@@ -205,3 +205,17 @@ section#main input[type="submit"]:hover {
     cursor: pointer;
 }
 
+section#main .list-category {
+    display: flex;
+    background: #f4f4f4;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+section#main .list-category ul {
+    list-style: none;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+

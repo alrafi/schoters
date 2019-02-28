@@ -1,8 +1,8 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Schoters</title>
+    <title>Schoters - Your Homepage</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -41,13 +41,22 @@
                 <a href="#"><li>Profile</li></a><span class="right">></span>
                 <a href="#"><li>Preference</li></a>
             </ul>
-        </div>
-        
+        </div>    
     </section>
+
     <section id="main">
         <div class="container">
             <h2>Your Schoters Homepage</h2>
-            <p>5 top scholarship categories that you are interested to help us deliver the most relevant information with your preferences</p> 
+            <p>Scholarship categories that you select:</p> 
+                <?php
+                    $category = $_GET['data'];
+                    $n = count($category);
+                    for($i=0; $i<$n; $i++) {    
+                        echo "<div class='list-category'><ul><li>" . $category[$i] . "</li>
+                            </ul>
+                            </div>";   
+                    } 
+                ?>
         </div>
     </section>
 </body>

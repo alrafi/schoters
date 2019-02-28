@@ -49,7 +49,7 @@
         <div class="container">
             <h2>Personalize your Schoters Homepage</h2>
             <p>Pick 5 top scholarship categories that you are interested to help us deliver the most relevant information with your preferences</p>
-            <form action="#">
+            <form action="screen2.php" method="get">
                 <div id="category"></div>
                 <input type="submit" class="button" value="Done">
             </form>  

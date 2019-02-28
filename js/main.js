@@ -14,7 +14,7 @@ function getData() {
             for (var i in category) {
                 output +=
 
-                    '<input type="checkbox" id="'+category[i].id+'" name="'+category[i].name+'">'+
+                    '<input type="checkbox" id="'+category[i].id+'" value="'+category[i].name+'" name="data[]">'+
                     '<label for="'+category[i].id+'" class="btn">'+
                     category[i].name +
                     '</label>'
